@@ -19,3 +19,4 @@ const userSlice =createSlice({
         }
     }
 })
+export const {setUser, logout} = userSlice.actions
