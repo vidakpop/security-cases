@@ -6,5 +6,12 @@ const initialState ={
     isAuthenticated: false
 }
 const userSlice =createSlice({
-    
+    name: 'user',
+    initialState,
+    reducers: {
+        setUser: (state, action) => {
+            state.user=action.payload
+            state.isAuthenticated=true
+        }
+    }
 })
