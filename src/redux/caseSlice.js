@@ -18,6 +18,7 @@ const caseSlice = createSlice({
 })
 export const {setCases,addCase} = caseSlice.actions
 
+{/*fetch cases from api */}
 export const fetchCases = () => async (dispatch) =>{
     try {
         const response = await api.get('/cases/')
@@ -26,3 +27,5 @@ export const fetchCases = () => async (dispatch) =>{
         console.error(error)
     }
 }
+
+export default caseSlice.reducer
