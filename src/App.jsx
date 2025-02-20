@@ -9,6 +9,12 @@ const App = () => {
       <Navbar/>
       <div className="flex">
         <Sidebar/>
+        <div className="flex-grow p-4 md:ml-64">
+          <Routes>
+            <Route path="/" element={<Home />}/>
+          </Routes>
+
+        </div>
 
       </div>
     </Router>
