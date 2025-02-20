@@ -9,3 +9,5 @@ cosnt Navbar = () => {
         </nav>
     )
 }
+
+export default Navbar
