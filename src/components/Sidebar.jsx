@@ -7,7 +7,7 @@ const Sidebar = () => {
             initial={{x:-100}}
             animate={{x:0}}
             transition={{duration:0.5}} 
-            className="W-64 BG-GRAY-800 h-screen text-white p-4">
+            className="w-64 bg-gray-900 h-screen text-white fixed left-0 top-0 pt-20 p-4 shadow-lg hidden md:block">
             <h2 className="text-lg font-bold">Menu</h2>
             <ul>
                 <li><Link to="/dashboard">Dashboard</Link></li>
