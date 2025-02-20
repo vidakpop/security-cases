@@ -3,7 +3,9 @@ import {motion} from 'framer-motion'
 
 const Navbar = () => {
     return (
-        <motion.nav className='bg-blue-600 text-white p-4 flex justify-between'>
+        <motion.nav 
+            initial={{opacity:0,y:-20}}
+            className='bg-blue-600 text-white p-4 flex justify-between'>
             <h1 className='text-xl font-bold'>Case Management</h1>
            {/* <Link to='/profile'>Profile</Link>*/} 
 
