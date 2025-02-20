@@ -16,3 +16,13 @@ const caseSlice = createSlice({
         
     },
 })
+export const {setCases,addCase} = caseSlice.actions
+
+export const fetchCases = () => async (dispatch) =>{
+    try {
+        const response = await api.get('/cases/')
+        dispatch(setCases(response.data))
+    } catch (error) {
+        console.error(error)
+    }
+}
