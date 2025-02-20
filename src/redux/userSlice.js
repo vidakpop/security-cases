@@ -5,3 +5,6 @@ const initialState ={
     user: null,
     isAuthenticated: false
 }
+const userSlice =createSlice({
+    
+})
