@@ -6,4 +6,10 @@ import api from '../services/api'
 const caseSlice = createSlice({
     name:'cases',
     initialState:{cases:[], loading:false},
+    reducers:{
+        setCases:{state,action}=>{
+            state.cases=action.payload
+        },
+        
+    }
 })
